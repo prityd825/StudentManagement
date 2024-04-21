@@ -1,0 +1,39 @@
+.delete-student-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.delete-student-container h3 {
+    margin-bottom: 20px;
+}
+
+.delete-student-container p {
+    margin-bottom: 10px;
+}
+
+.delete-student-container strong {
+    font-weight: bold;
+}
+.button-container button {
+    background-color: #cb4b21;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.button-container button:hover {
+    background-color: #d59f21;
+}
+
+.button-container button:last-child {
+    margin-right: 0;
+}

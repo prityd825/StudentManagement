@@ -1,0 +1,15 @@
+<div class="delete-student-container">
+    <h3>Delete Student</h3>
+    <p>Are you sure you want to delete the following student?</p>
+    <div>
+        <p><strong>ID:</strong> {{ student.id }}</p>
+        <p><strong>Name:</strong> {{ student.name }}</p>
+        <p><strong>Department:</strong> {{ student.department }}</p>
+        <p><strong>Teacher ID:</strong> {{ student.teacherId }}</p>
+        <p><strong>Teacher Name:</strong> {{ student.teacherName }}</p>
+    </div>
+    <div class="button-container">
+        <button mat-raised-button color="warn" (click)="confirmDelete()">Delete</button>
+        <button mat-raised-button (click)="cancelDelete()">Cancel</button>
+    </div>
+</div>

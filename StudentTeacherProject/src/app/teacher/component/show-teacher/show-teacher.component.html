@@ -1,0 +1,28 @@
+<div class="teacher-details-container">
+    <h3>Teacher Details</h3>
+    <div>
+        <p><strong>ID:</strong> {{ teacher.id }}</p>
+        <p><strong>Name:</strong> {{ teacher.name }}</p>
+        <p><strong>Department:</strong> {{ teacher.department }}</p>
+    </div>
+    <!-- Students List -->
+    <div class="students-list">
+        <h4>Students Under Teacher</h4>
+        <table class="student-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of studentsUnderTeacher">
+                    <td>{{ student.id }}</td>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.department }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

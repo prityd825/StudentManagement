@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+  width: 100%; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  border: 1px solid #cccccc;
+  margin: 20px auto; 
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.button-icon {
+  background-color: #cb4b21; 
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.button-icon:hover {
+  background-color: #d59f21; 
+}

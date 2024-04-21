@@ -1,0 +1,12 @@
+<div class="teacher-container">
+    <h3>Edit Teacher</h3>
+    <form (ngSubmit)="updateTeacher(teacherForm)" #teacherForm="ngForm">
+        <label for="teacherName">Name:</label>
+        <input type="text" id="teacherName" name="teacherName" [(ngModel)]="editedTeacher.teacherName">
+        <label for="teacherId">ID:</label>
+        <input type="text" id="teacherId" name="teacherId" [(ngModel)]="editedTeacher.teacherId" >
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" [(ngModel)]="editedTeacher.department" >
+        <button type="submit">Update</button>
+    </form>
+</div>

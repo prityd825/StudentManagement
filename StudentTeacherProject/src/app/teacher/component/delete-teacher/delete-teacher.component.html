@@ -1,0 +1,14 @@
+<div class="delete-teacher-container">
+    <h3>Delete Teacher</h3>
+    <p>Are you sure you want to delete the following teacher?</p>
+    <div>
+        <p><strong>ID:</strong> {{ teacher.id }}</p>
+        <p><strong>Name:</strong> {{ teacher.name }}</p>
+        <p><strong>Department:</strong> {{ teacher.department }}</p>
+    </div>
+    <div class="button-container">
+        <button mat-raised-button color="warn" (click)="confirmDelete()">Delete</button>
+        <button mat-raised-button (click)="cancelDelete()">Cancel</button>
+    </div>
+</div>
+
