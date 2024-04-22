@@ -1,76 +1,64 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using StudentTeacher_BackEnd_.Models.Domains;
-using StudentTeacher_BackEnd_.Repositories;
-
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using StudentTeacher_BackEnd_.Handler.StudentHandler;
+using StudentTeacher_BackEnd_.StudentHandler;
 
 namespace StudentTeacher_BackEnd_.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StudentsController : ControllerBase
+    public class StudentController : ControllerBase
     {
-        private readonly IGenericRepository<Student> _studentRepository;
+        private readonly IMediator _mediator;
 
-        public StudentsController(IGenericRepository<Student> studentRepository)
+        public StudentController(IMediator mediator)
         {
-            _studentRepository = studentRepository;
+            _mediator = mediator;
         }
-        // GET: api/<StudentsController>
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
+
+        [HttpPost]
+        public async Task<IActionResult> CreateStudent(CreateStudentCommand command)
         {
-            var students = await _studentRepository.GetAllAsync();
+            var studentId = await _mediator.Send(command);
+            return Ok(studentId);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllStudents()
+        {
+            var students = await _mediator.Send(new GetAllStudentsQuery());
             return Ok(students);
         }
 
-        // GET api/<StudentsController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Student>> GetStudent(int id)
+        public async Task<IActionResult> GetStudentById(int id)
         {
-            var student = await _studentRepository.GetByIdAsync(id);
+            var student = await _mediator.Send(new GetStudentByIdQuery { StudentId = id });
             if (student == null)
             {
                 return NotFound();
             }
             return Ok(student);
         }
-        // POST api/<StudentsController>
-        [HttpPost]
-        public async Task<ActionResult<Student>> CreateStudent(Student student)
-        {
-            await _studentRepository.AddAsync(student);
-            return CreatedAtAction(nameof(GetStudent), new { id = student.Id }, student);
-        }
 
-        // PUT api/<StudentsController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateStudent(int id, Student student)
+        public async Task<IActionResult> UpdateStudent(int id, UpdateStudentCommand command)
         {
-            if (id != student.Id)
+            if (id != command.Id)
             {
                 return BadRequest();
             }
 
-            await _studentRepository.UpdateAsync(student);
-
+            await _mediator.Send(command);
             return NoContent();
         }
 
-        // DELETE api/<StudentsController>/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Student>> DeleteStudent(int id)
+        public async Task<IActionResult> DeleteStudent(int id)
         {
-            var student = await _studentRepository.GetByIdAsync(id);
-            if (student == null)
-            {
-                return NotFound();
-            }
-
-            await _studentRepository.DeleteAsync(student);
-
-            return student;
+            var command = new DeleteStudentCommand { StudentId = id };
+            await _mediator.Send(command);
+            return NoContent();
         }
     }
 }

@@ -10,6 +10,8 @@ import { DeleteTeacherComponent } from './teacher/component/delete-teacher/delet
 import { EditStudentComponent } from './student/component/edit-student/edit-student.component';
 import { ShowStudentComponent } from './student/component/show-student/show-student.component';
 import { DeleteStudentComponent } from './student/component/delete-student/delete-student.component';
+import { TeacherModule } from './teacher/teacher.module';
+import { StudentModule } from './student/student.module';
 
 
 const routes: Routes = [
@@ -26,7 +28,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [TeacherModule, StudentModule,RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

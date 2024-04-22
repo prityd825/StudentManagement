@@ -1,34 +1,39 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using StudentTeacher_BackEnd_.Models.Domains;
-using StudentTeacher_BackEnd_.Repositories;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using StudentTeacher_BackEnd_.Handler.TeacherHandler;
+using System.Threading.Tasks;
 
 namespace StudentTeacher_BackEnd_.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TeachersController : ControllerBase
+    public class TeacherController : ControllerBase
     {
-        private readonly IGenericRepository<Teacher> _teacherRepository;
+        private readonly IMediator _mediator;
 
-        public TeachersController(IGenericRepository<Teacher> teacherRepository)
+        public TeacherController(IMediator mediator)
         {
-            _teacherRepository = teacherRepository;
+            _mediator = mediator;
         }
-        // GET: api/<TeachersController>
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Teacher>>> GetTeachers()
+
+        [HttpPost]
+        public async Task<IActionResult> CreateTeacher(CreateTeacherCommand command)
         {
-            var teachers = await _teacherRepository.GetAllAsync();
+            var teacherId = await _mediator.Send(command);
+            return Ok(teacherId);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllTeachers()
+        {
+            var teachers = await _mediator.Send(new GetAllTeachersQuery());
             return Ok(teachers);
         }
 
-        // GET api/<TeachersController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Teacher>> GetTeacher(int id)
+        public async Task<IActionResult> GetTeacherById(int id)
         {
-            var teacher = await _teacherRepository.GetByIdAsync(id);
+            var teacher = await _mediator.Send(new GetTeacherByIdQuery { TeacherId = id });
             if (teacher == null)
             {
                 return NotFound();
@@ -36,41 +41,24 @@ namespace StudentTeacher_BackEnd_.Controllers
             return Ok(teacher);
         }
 
-        // POST api/<TeachersController>
-        [HttpPost]
-        public async Task<ActionResult<Teacher>> CreateTeacher(Teacher teacher)
-        {
-            await _teacherRepository.AddAsync(teacher);
-            return CreatedAtAction(nameof(GetTeacher), new { id = teacher.Id }, teacher);
-        }
-
-        // PUT api/<TeachersController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateTeacher(int id, Teacher teacher)
+        public async Task<IActionResult> UpdateTeacher(int id, UpdateTeacherCommand command)
         {
-            if (id != teacher.Id)
+            if (id != command.Id)
             {
                 return BadRequest();
             }
 
-            await _teacherRepository.UpdateAsync(teacher);
-
+            await _mediator.Send(command);
             return NoContent();
         }
 
-        // DELETE api/<TeachersController>/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Teacher>> DeleteTeacher(int id)
+        public async Task<IActionResult> DeleteTeacher(int id)
         {
-            var teacher = await _teacherRepository.GetByIdAsync(id);
-            if (teacher == null)
-            {
-                return NotFound();
-            }
-
-            await _teacherRepository.DeleteAsync(teacher);
-
-            return teacher;
+            var command = new DeleteTeacherCommand { TeacherId = id };
+            await _mediator.Send(command);
+            return NoContent();
         }
     }
 }

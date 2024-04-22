@@ -7,7 +7,8 @@ import { TeacherModule } from './teacher/teacher.module';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent
@@ -21,6 +22,9 @@ import { MatTableModule } from '@angular/material/table';
     FormsModule,
     MatIconModule,
     MatTableModule,
+    MatDialogModule,
+    HttpClientModule
+    
   ],
 
   providers: [],

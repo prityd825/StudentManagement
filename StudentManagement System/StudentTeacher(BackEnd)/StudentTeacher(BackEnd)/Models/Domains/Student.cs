@@ -11,7 +11,7 @@ namespace StudentTeacher_BackEnd_.Models.Domains
         public required string Department { get; set; }
         public int TeacherId { get; set; }
         public required string TeacherName { get; set; }
-        public required Teacher Teacher { get; set; }
+        public  Teacher Teacher { get; set; }
     }
 
 

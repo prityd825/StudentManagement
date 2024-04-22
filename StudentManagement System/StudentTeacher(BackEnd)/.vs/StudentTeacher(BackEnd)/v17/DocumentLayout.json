@@ -3,48 +3,76 @@
   "WorkspaceRootPath": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\models\\domains\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\models\\domains\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\handler\\studenthandler\\createstudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\handler\\studenthandler\\createstudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\handler\\studenthandler\\deletestudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\handler\\studenthandler\\deletestudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\handler\\studenthandler\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\handler\\studenthandler\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\handler\\teacherhandler\\createteachercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\handler\\teacherhandler\\createteachercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\handler\\teacherhandler\\createteachercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\handler\\teacherhandler\\createteachercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\handler\\studenthandler\\deletestudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\handler\\studenthandler\\deletestudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\models\\domains\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\models\\domains\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\studentteacher(backend).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\studentteacher(backend).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\studentteacher(backend).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\studentteacher(backend).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\models\\domains\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\models\\domains\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\migrations\\20240421084909_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\migrations\\20240421084909_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,115 +82,206 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateStudentCommand.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\StudentHandler\\CreateStudentCommand.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Handler\\StudentHandler\\CreateStudentCommand.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\StudentHandler\\CreateStudentCommand.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Handler\\StudentHandler\\CreateStudentCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T20:23:11.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateStudentCommandHandler.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\StudentHandler\\CreateStudentCommandHandler.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Handler\\StudentHandler\\CreateStudentCommandHandler.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\StudentHandler\\CreateStudentCommandHandler.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Handler\\StudentHandler\\CreateStudentCommandHandler.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAkwB0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T20:24:15.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateTeacherCommandHandler.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\CreateTeacherCommandHandler.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\CreateTeacherCommandHandler.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\CreateTeacherCommandHandler.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\CreateTeacherCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T20:28:35.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DeleteStudentCommandHandler.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\StudentHandler\\DeleteStudentCommandHandler.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Handler\\StudentHandler\\DeleteStudentCommandHandler.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\StudentHandler\\DeleteStudentCommandHandler.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Handler\\StudentHandler\\DeleteStudentCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T21:04:13.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "StudentsController.cs",
               "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Controllers\\StudentsController.cs",
               "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Controllers\\StudentsController.cs",
               "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Controllers\\StudentsController.cs",
               "RelativeToolTip": "StudentTeacher(BackEnd)\\Controllers\\StudentsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T07:26:28.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Models\\Domains\\Teacher.cs",
-              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Models\\Domains\\Teacher.cs",
-              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Models\\Domains\\Teacher.cs",
-              "RelativeToolTip": "StudentTeacher(BackEnd)\\Models\\Domains\\Teacher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "DocumentIndex": 5,
+              "Title": "CreateTeacherCommand.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\CreateTeacherCommand.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\CreateTeacherCommand.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\CreateTeacherCommand.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\CreateTeacherCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T06:09:00.997Z",
+              "WhenOpened": "2024-04-21T20:27:44.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20240421084909_init.cs",
-              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs",
-              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs",
-              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs",
-              "RelativeToolTip": "StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "DeleteStudentCommand.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\StudentHandler\\DeleteStudentCommand.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Handler\\StudentHandler\\DeleteStudentCommand.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\StudentHandler\\DeleteStudentCommand.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Handler\\StudentHandler\\DeleteStudentCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T08:49:10.018Z",
+              "WhenOpened": "2024-04-21T21:02:14.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TeachersController.cs",
-              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Controllers\\TeachersController.cs",
-              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Controllers\\TeachersController.cs",
-              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Controllers\\TeachersController.cs",
-              "RelativeToolTip": "StudentTeacher(BackEnd)\\Controllers\\TeachersController.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAowEMAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T07:26:58.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Student.cs",
               "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Models\\Domains\\Student.cs",
               "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Models\\Domains\\Student.cs",
               "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Models\\Domains\\Student.cs",
               "RelativeToolTip": "StudentTeacher(BackEnd)\\Models\\Domains\\Student.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T06:05:10.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "StudentTeacher(BackEnd)",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-21T20:19:51.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TeachersController.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Controllers\\TeachersController.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Controllers\\TeachersController.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Controllers\\TeachersController.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Controllers\\TeachersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T07:26:58.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Data\\ApplicationDbContext.cs",
               "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "StudentTeacher(BackEnd)\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T06:35:12.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Program.cs",
-              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Program.cs",
-              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Program.cs",
-              "RelativeToolTip": "StudentTeacher(BackEnd)\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T06:40:33.609Z",
+              "WhenOpened": "2024-04-21T06:30:28.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
               "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
               "RelativeToolTip": "StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAfAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAcwC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T06:32:25.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Models\\Domains\\Teacher.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Models\\Domains\\Teacher.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Models\\Domains\\Teacher.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Models\\Domains\\Teacher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T06:09:00.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Program.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Program.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Program.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Program.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAuwC0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T06:40:33.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\appsettings.json",
               "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\appsettings.json",
@@ -175,28 +294,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
-              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
-              "RelativeToolTip": "StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T06:30:28.515Z",
+              "DocumentIndex": 16,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Properties\\launchSettings.json",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAIBJwB8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-21T13:07:46.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StudentTeacher(BackEnd)",
-              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj",
-              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj",
-              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj",
-              "RelativeToolTip": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-21T06:29:31.782Z",
+              "DocumentIndex": 17,
+              "Title": "20240421084909_init.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T08:49:10.018Z",
               "EditorCaption": ""
             }
           ]

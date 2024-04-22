@@ -11,6 +11,7 @@ export class StudentHomeComponent {
   students: any[] = [];
   selectedStudent: any;
   displayedColumns: string[] = ['studentId', 'studentName', 'department', 'teacherId', 'teacherName', 'actions'];
+  showAddForm: boolean = false;
 
   constructor(private router: Router) { }
 
@@ -23,6 +24,7 @@ export class StudentHomeComponent {
 
   goAddStudent() {
     this.router.navigate(['/add-student']);
+  
   }
 
   goEditStudent(student:any) {

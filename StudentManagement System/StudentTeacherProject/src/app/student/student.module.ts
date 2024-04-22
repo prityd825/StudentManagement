@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatTableModule,
     FormsModule,
+   
   ]
 })
 export class StudentModule { }

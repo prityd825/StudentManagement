@@ -231,3 +231,4 @@ D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTea
 D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\obj\Debug\net8.0\StudentTeacher(BackEnd).pdb
 D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\obj\Debug\net8.0\StudentTeacher(BackEnd).genruntimeconfig.cache
 D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\obj\Debug\net8.0\ref\StudentTeacher(BackEnd).dll
+D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\bin\Debug\net8.0\System.Web.Cors.dll
