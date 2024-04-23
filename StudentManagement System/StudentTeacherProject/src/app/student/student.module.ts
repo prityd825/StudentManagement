@@ -16,7 +16,7 @@ import { FormsModule } from '@angular/forms';
     DeleteStudentComponent,
     ShowStudentComponent,
     StudentHomeComponent,
-    
+
   ],
   imports: [
     CommonModule,

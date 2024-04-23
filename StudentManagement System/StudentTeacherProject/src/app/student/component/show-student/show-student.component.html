@@ -1,11 +1,27 @@
+<div>
+  <form class="Student-info-form" (ngSubmit)="getStudentInfo()" #studentForm="ngForm" ngNativeValidate>
+    <div class="form-group">
+      <label for="id">Student ID:</label>
+      <input type="number" required id="id" name="id" [(ngModel)]="studentId" placeholder="Enter Student id" class="form-control" #idInput="ngModel">
+      <div *ngIf="idInput.invalid && (idInput.dirty || idInput.touched)" class="text-danger">
+        <div *ngIf="idInput.errors?.['required']">
+          Student ID is required.
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Show details Information</button>
+  </form> 
+</div> 
 <div class="student-details-container">
     <h3>Student Details</h3>
     <div>
-      <p><strong>ID:</strong> </p>
-      <p><strong>Name:</strong> </p>
-      <p><strong>Department:</strong> </p>
-      <p><strong>Teacher ID:</strong> </p>
-      <p><strong>Teacher Name:</strong> </p>
+      <p><strong>ID:</strong> {{ student.id }} </p>
+      <p><strong>Name:</strong> {{ student.name }}</p>
+      <p><strong>Department:</strong>{{ student.department }} </p>
+      <p><strong>Teacher ID:</strong> {{ student.teacherId }}</p>
+      <p><strong>Teacher Name:</strong> {{ student.teacherName }} </p>
     </div>
-  </div>
-  
+</div>
+<div *ngIf="!student.id">
+  <p>No student details available</p>
+</div>

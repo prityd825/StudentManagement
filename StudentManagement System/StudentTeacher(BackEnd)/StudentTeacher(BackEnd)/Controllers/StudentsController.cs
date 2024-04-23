@@ -37,6 +37,7 @@ namespace StudentTeacher_BackEnd_.Controllers
             if (student == null)
             {
                 return NotFound();
+
             }
             return Ok(student);
         }

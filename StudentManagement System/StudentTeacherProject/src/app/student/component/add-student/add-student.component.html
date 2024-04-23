@@ -3,8 +3,6 @@
     <form (ngSubmit)="addStudent(studentForm)" #studentForm="ngForm">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" [(ngModel)]="newStudent.name" required>
-      <label for="id">ID:</label>
-      <input type="text" id="id" name="id" [(ngModel)]="newStudent.id">
       <label for="department">Department:</label>
       <input type="text" id="department" name="department" [(ngModel)]="newStudent.department" required>
       

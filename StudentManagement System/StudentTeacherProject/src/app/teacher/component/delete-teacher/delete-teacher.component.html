@@ -1,14 +1,31 @@
-<div class="delete-teacher-container">
-    <h3>Delete Teacher</h3>
-    <p>Are you sure you want to delete the following teacher?</p>
-    <div>
-        <p><strong>ID:</strong> {{ teacher.id }}</p>
+<div>
+    <form class="Teacher-info-form" (ngSubmit)="getTeacherInfo()" #teacherForm="ngForm" ngNativeValidate>
+      <div class="form-group">
+        <label for="id">Teacher ID:</label>
+        <input type="number" required id="id" name="id" [(ngModel)]="teacherId" placeholder="Enter Teacher id" class="form-control" #idInput="ngModel">
+        <div *ngIf="idInput.invalid && (idInput.dirty || idInput.touched)" class="text-danger">
+          <div *ngIf="idInput.errors?.['required']">
+            Teacher ID is required.
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Show details Information</button>
+    </form> 
+  </div> 
+  <div class="Teacher-details-container">
+      <h3>Teacher Details</h3>
+      <div>
+        <p><strong>ID:</strong> {{ teacher.id }} </p>
         <p><strong>Name:</strong> {{ teacher.name }}</p>
-        <p><strong>Department:</strong> {{ teacher.department }}</p>
-    </div>
-    <div class="button-container">
-        <button mat-raised-button color="warn" (click)="confirmDelete()">Delete</button>
-        <button mat-raised-button (click)="cancelDelete()">Cancel</button>
-    </div>
-</div>
-
+        <p><strong>Department:</strong>{{ teacher.department }} </p>
+      </div>
+  </div>
+  <div *ngIf="!teacher.id">
+    <p>No teacher details available</p>
+  </div>
+  
+      <div class="button-container">
+        <button mat-raised-button color="warn" (click)="confirmDelete()" class="button-icon">Delete</button>
+        <button mat-raised-button (click)="cancelDelete()" class="button-icon">Cancel</button>
+      </div>
+   

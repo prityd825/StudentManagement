@@ -3,8 +3,8 @@
     public class Teacher
     {
         public int Id { get; set; }
-        public required string Name { get; set; }
-        public required string Department {get;set;}
+        public  string Name { get; set; }
+        public  string Department {get;set;}
         
     }
 

@@ -2,7 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using StudentTeacher_BackEnd_.Data;
 using StudentTeacher_BackEnd_.Repositories;
 using StudentTeacher_BackEnd_.Controllers;
-
+using System.Reflection;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Hosting;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -19,14 +22,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
 // Add CORS services
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(builder =>
     {
-        builder.WithOrigins("http://localhost:4200")
+        builder.WithOrigins("http://localhost:4300")
                .AllowAnyHeader()
                .AllowAnyMethod();
     });

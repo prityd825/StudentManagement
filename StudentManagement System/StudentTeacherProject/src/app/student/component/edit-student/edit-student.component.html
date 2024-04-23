@@ -1,15 +1,12 @@
 <div class="students-container">
     <h3>Update Student</h3>
-    <form (ngSubmit)="updateStudent(studentForm)" #studentForm="ngForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" [(ngModel)]="student.name" required>
+    <form (ngSubmit)="updateStudent(studentForm)" #studentForm="ngForm" >
         <label for="id">ID:</label>
-        <input type="text" id="id" name="id" [(ngModel)]="student.id" required>
+        <input type="text" id="id" name="id" [(ngModel)]="editedStudent.id" required>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="editedStudent.name" required>
         <label for="department">Department:</label>
         <input type="text" id="department" name="department" [(ngModel)]="editedStudent.department">
-
-        <label for="teacherId">Teacher ID:</label>
-        <input type="text" id="teacherId" name="teacherId" [(ngModel)]="editedStudent.teacherId">
         <label for="teacherName">Teacher Name:</label>
         <input type="text" id="teacherName" name="teacherName" [(ngModel)]="editedStudent.teacherName">
         <button type="submit">Update</button>

@@ -3,6 +3,9 @@
     "",
     "\\StudentTeacher(BackEnd)",
     "\\StudentTeacher(BackEnd)\\Controllers",
+    "\\StudentTeacher(BackEnd)\\Handler",
+    "\\StudentTeacher(BackEnd)\\Handler\\StudentHandler",
+    "\\StudentTeacher(BackEnd)\\Handler\\TeacherHandler",
     "\\StudentTeacher(BackEnd)\\Repositories"
   ],
   "SelectedNode": "\\StudentTeacher(BackEnd).sln",

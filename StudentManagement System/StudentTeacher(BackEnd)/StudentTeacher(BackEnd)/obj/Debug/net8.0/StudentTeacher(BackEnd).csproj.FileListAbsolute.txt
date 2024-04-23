@@ -232,3 +232,9 @@ D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTea
 D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\obj\Debug\net8.0\StudentTeacher(BackEnd).genruntimeconfig.cache
 D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\obj\Debug\net8.0\ref\StudentTeacher(BackEnd).dll
 D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\bin\Debug\net8.0\System.Web.Cors.dll
+D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\bin\Debug\net8.0\MediatR.dll
+D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\bin\Debug\net8.0\System.Web.Http.dll
+D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\bin\Debug\net8.0\System.Web.Http.Cors.dll
+D:\StudentManagement\StudentManagement System\StudentTeacher(BackEnd)\StudentTeacher(BackEnd)\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

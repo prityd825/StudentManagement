@@ -22,14 +22,15 @@ namespace StudentTeacher_BackEnd_.Controllers
             var teacherId = await _mediator.Send(command);
             return Ok(teacherId);
         }
-
+        
         [HttpGet]
         public async Task<IActionResult> GetAllTeachers()
         {
-            var teachers = await _mediator.Send(new GetAllTeachersQuery());
+            var teachers = await _mediator.Send(new GetAllTeacherQuery());
             return Ok(teachers);
         }
 
+        
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTeacherById(int id)
         {
@@ -41,16 +42,21 @@ namespace StudentTeacher_BackEnd_.Controllers
             return Ok(teacher);
         }
 
+
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateTeacher(int id, UpdateTeacherCommand command)
+        public async Task<IActionResult> UpdateTeacher(int id, [FromBody] UpdateTeacherCommand command)
         {
-            if (id != command.Id)
+            
+            command.Id = id;
+
+
+            if (string.IsNullOrEmpty(command.Name) && string.IsNullOrEmpty(command.Department))
             {
-                return BadRequest();
+                return BadRequest("At least one field (Name or Department) must be provided for update.");
             }
 
-            await _mediator.Send(command);
-            return NoContent();
+            var updatedTeacher = await _mediator.Send(command);
+            return Ok(updatedTeacher);
         }
 
         [HttpDelete("{id}")]
@@ -59,6 +65,6 @@ namespace StudentTeacher_BackEnd_.Controllers
             var command = new DeleteTeacherCommand { TeacherId = id };
             await _mediator.Send(command);
             return NoContent();
-        }
+        } 
     }
 }

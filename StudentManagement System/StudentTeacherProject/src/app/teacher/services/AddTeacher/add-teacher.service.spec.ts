@@ -1,4 +1,4 @@
-/*import { TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 
 import { AddTeacherService } from './add-teacher.service';
 
@@ -13,4 +13,4 @@ describe('AddTeacherService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
-}); */
+});

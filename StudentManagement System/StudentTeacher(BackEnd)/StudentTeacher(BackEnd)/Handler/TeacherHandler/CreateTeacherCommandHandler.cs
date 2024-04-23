@@ -4,7 +4,7 @@ using StudentTeacher_BackEnd_.Repositories;
 
 namespace StudentTeacher_BackEnd_.Handler.TeacherHandler
 {
-    public class CreateTeacherCommandHandler : IRequestHandler<CreateTeacherCommand, int>
+    public class CreateTeacherCommandHandler : IRequestHandler<CreateTeacherCommand,Teacher>
     {
         private readonly IGenericRepository<Teacher> _teacherRepository;
 
@@ -13,17 +13,18 @@ namespace StudentTeacher_BackEnd_.Handler.TeacherHandler
             _teacherRepository = teacherRepository;
         }
 
-        public async Task<int> Handle(CreateTeacherCommand request, CancellationToken cancellationToken)
+        public async Task<Teacher> Handle(CreateTeacherCommand request, CancellationToken cancellationToken)
         {
             var teacher = new Teacher
             {
+                Id = request.Id,
                 Name = request.Name,
                 Department = request.Department
             };
 
             await _teacherRepository.AddAsync(teacher);
 
-            return teacher.Id;
+            return teacher;
         }
     }
 }

@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { HttpClient } from '@angular/common/http'; 
-import { environment } from '../../../../environments/environment';
-import { Subscription } from 'rxjs';
+import { AddStudentService } from '../../services/addStudent/add-student.service';
+import { Student } from '../../student.model';
 
 @Component({
   selector: 'app-add-student',
@@ -11,45 +10,36 @@ import { Subscription } from 'rxjs';
 })
 
 export class AddStudentComponent {
-  students: any[] = [];
-  newStudent: any = {
-  id: '',
+  newStudent: Student = {
+    id:0,
   name:'',
   department: '',
-  teacherId: '',
-  teacherName: ''
+  teacherId: 0 ,
+  teacherName: '',
   };
-  showAddForm: boolean = true;
   
-  constructor(private http: HttpClient) {} 
-  private subscription: Subscription | undefined;
+  constructor(private addStudentService: AddStudentService) {} 
+
 
   addStudent(form: NgForm) {
     if (form.invalid) {
-      alert("This field is required");
+      alert("Please Fill all required Field");
       return;
     }
-  
-    this.http.post(`${environment.domain}/Students`, this.newStudent)
+  console.log(this.newStudent);
+  this.addStudentService.addStudent(this.newStudent)
     .subscribe(
-      (response: any) => {
-        console.log('Response:', response);
-        //alert('Student added successfully');
-        this.students.push(this.newStudent);
-        this.newStudent = {};
-        form.resetForm();
-      },
-      (error: any) => {
-        console.error('Error:', error);
-        alert('Failed to add student');
+      (Student: Student) => {
+        console.log('Student created successfully: ',Student);
+        alert('Student added successfully');
+        this.resetForm();
+      }, (error: any) => {
+        console.error('Error adding student:', error);
       }
     );
   }
-  
-  ngOnDestroy() {
-    if (this.subscription) {
-      this.subscription.unsubscribe();
-    }
-  }
+  resetForm() {
+     this.newStudent = { id: 0,name: "", department: "", teacherId: 0 ,teacherName: "" };
+  } 
 
 }

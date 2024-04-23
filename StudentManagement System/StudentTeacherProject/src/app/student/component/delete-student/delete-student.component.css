@@ -1,24 +1,80 @@
-.delete-student-container {
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-container {
+    text-align: center;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .orange-button {
+    background-color: rgb(255, 60, 0) !important;
+    color: white !important;
+  }
+  
+  .orange-button:hover {
+    background-color: rgb(255, 153, 0) !important;
+  }
+
+  .teacher-info-form {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-}
-
-.delete-student-container h3 {
-    margin-bottom: 20px;
-}
-
-.delete-student-container p {
-    margin-bottom: 10px;
-}
-
-.delete-student-container strong {
-    font-weight: bold;
-}
-.button-container button {
+  }
+  .student-details-container {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    
+    .student-details-container h3 {
+      margin-bottom: 10px;
+    }
+    
+    .student-details-container div {
+      margin-top: 10px;
+    }
+    
+    .student-details-container p {
+      margin: 5px 0;
+    }
+    
+    .student-details-container strong {
+      font-weight: bold;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+  .btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #cb4b21;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #b36b00;
+  }
+  .teacher-info {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  
+.button-icon {
+    background-color: #cb4b21; 
     border: none;
     color: white;
     padding: 5px 20px;
@@ -28,12 +84,10 @@
     font-size: 16px;
     margin-right: 10px;
     border-radius: 5px;
-}
-
-.button-container button:hover {
-    background-color: #d59f21;
-}
-
-.button-container button:last-child {
-    margin-right: 0;
-}
+  }
+  
+  .button-icon:hover {
+    background-color: #d59f21; 
+  }
+  
+  

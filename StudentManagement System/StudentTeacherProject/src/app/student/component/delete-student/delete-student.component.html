@@ -1,15 +1,33 @@
-<div class="delete-student-container">
-    <h3>Delete Student</h3>
-    <p>Are you sure you want to delete the following student?</p>
-    <div>
-        <p><strong>ID:</strong> {{ student.id }}</p>
+<div>
+    <form class="Student-info-form" (ngSubmit)="getStudentInfo()" #teacherForm="ngForm" ngNativeValidate>
+      <div class="form-group">
+        <label for="id">Student ID:</label>
+        <input type="number" required id="id" name="id" [(ngModel)]="studentId" placeholder="Enter Student id" class="form-control" #idInput="ngModel">
+        <div *ngIf="idInput.invalid && (idInput.dirty || idInput.touched)" class="text-danger">
+          <div *ngIf="idInput.errors?.['required']">
+            Student ID is required.
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Show details Information</button>
+    </form> 
+  </div> 
+  <div class="student-details-container">
+      <h3>Student Details</h3>
+      <div>
+        <p><strong>ID:</strong> {{ student.id }} </p>
         <p><strong>Name:</strong> {{ student.name }}</p>
-        <p><strong>Department:</strong> {{ student.department }}</p>
+        <p><strong>Department:</strong>{{ student.department }} </p>
         <p><strong>Teacher ID:</strong> {{ student.teacherId }}</p>
-        <p><strong>Teacher Name:</strong> {{ student.teacherName }}</p>
-    </div>
-    <div class="button-container">
-        <button mat-raised-button color="warn" (click)="confirmDelete()">Delete</button>
-        <button mat-raised-button (click)="cancelDelete()">Cancel</button>
-    </div>
-</div>
+        <p><strong>Teacher Name:</strong> {{ student.teacherName }} </p>
+      </div>
+  </div>
+  <div *ngIf="!student.id">
+    <p>No student details available</p>
+  </div>
+  
+      <div class="button-container">
+        <button mat-raised-button color="warn" (click)="confirmDelete()" class="button-icon">Delete</button>
+        <button mat-raised-button (click)="cancelDelete()" class="button-icon">Cancel</button>
+      </div>
+   
