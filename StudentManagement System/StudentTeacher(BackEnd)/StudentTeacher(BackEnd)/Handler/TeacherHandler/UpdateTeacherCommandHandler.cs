@@ -21,10 +21,10 @@ namespace StudentTeacher_BackEnd_.Handler.TeacherHandler
 
         public async Task<Teacher> Handle(UpdateTeacherCommand request, CancellationToken cancellationToken)
         {
-            // Retrieve the teacher from the repository by ID
+            
             var teacher = await _teacherRepository.GetByIdAsync(request.Id);
 
-            // If the teacher is not found, throw an exception
+           
             if (teacher == null)
             {
                 throw new NotFoundException($"Teacher with ID {request.Id} not found.");

@@ -8,7 +8,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class TeacherHomeService {
-
   private domain = environment.domain;
   private apiUrl = `${this.domain}/Teacher`;
   constructor(private http: HttpClient) { }

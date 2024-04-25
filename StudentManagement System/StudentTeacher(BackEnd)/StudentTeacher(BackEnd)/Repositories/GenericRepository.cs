@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
-using StudentTeacher_BackEnd_.Data;
+﻿
 
 namespace StudentTeacher_BackEnd_.Repositories
 {
+    using Microsoft.EntityFrameworkCore;
+    using StudentTeacher_BackEnd_.Data;
+
     public class GenericRepository<T>: IGenericRepository<T> where T: class
     {
         private readonly ApplicationDbContext _context;

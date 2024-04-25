@@ -6,6 +6,8 @@ using System.Reflection;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Build.Framework;
+using StudentTeacher_BackEnd_.GlobalException;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +17,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddTransient<GlobalExceptionHandlingMiddleware>();
 
 // Add DbContext and Repository
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -50,7 +54,7 @@ app.UseAuthorization();
 app.UseRouting();
 
 app.UseAuthorization();
-
+app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 app.MapControllers();
 app.UseEndpoints(endpoints =>
 {
