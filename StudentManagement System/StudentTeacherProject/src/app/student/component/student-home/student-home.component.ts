@@ -11,7 +11,7 @@ import { StudentHomeService } from '../../services/studentHome/student-home.serv
 export class StudentHomeComponent implements OnInit {
   students: Student[] = [];
   selectedStudent: Student | null = null;
-  displayedColumns: string[] = ['studentId', 'studentName', 'department', 'teacherId', 'teacherName'];
+  displayedColumns: string[] = ['studentId', 'studentName', 'department', 'teacherId', 'teacherName', 'actions'];
   showAddForm: boolean = false;
 
   constructor(private router: Router, private studentHomeService: StudentHomeService) { }
@@ -35,15 +35,28 @@ export class StudentHomeComponent implements OnInit {
     this.router.navigate(['/add-student']);
   }
 
-  goEditStudent() {
+  goEditStudent()
+  {
     this.router.navigate(['/edit-student']);
   }
 
-  goDeleteStudent() {
+  goEditSelectedStudent(student: Student) {
+    this.router.navigate(['/edit-student', student.id]);
+  }
+
+  goDeleteStudent(){
     this.router.navigate(['/delete-student']);
   }
 
-  goDetailsStudent() {
+  goDeleteSelectedStudent(student: Student) {
+    this.router.navigate(['/delete-student', student.id]);
+  }
+
+  goDetailsStudent(){
     this.router.navigate(['/show-student']);
+  }
+
+  goDetailsSelectedStudent(student: Student) {
+    this.router.navigate(['/show-student', student.id]);
   }
 }

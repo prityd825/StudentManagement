@@ -2,6 +2,8 @@ import { Component, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { EditTeacherService } from '../../services/editTeacher/edit-teacher.service';
 import { Teacher } from '../../teacher.model';
+import { ActivatedRoute } from '@angular/router';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-edit-teacher',
@@ -16,7 +18,35 @@ export class EditTeacherComponent {
     department: ''
   };
 
-  constructor(private editTeacherService: EditTeacherService) {}
+  constructor(
+    private editTeacherService: EditTeacherService,
+    private route: ActivatedRoute,
+  ) {}
+
+
+  ngOnInit(): void {
+    this.route.params.subscribe(params => {
+      const teacherId = +params['id'];
+      if (teacherId) {
+        this.getTeacherById(teacherId);
+      } else {
+        console.error('Invalid teacher ID provided.');
+      }
+    });
+  }
+
+  getTeacherById(teacherId: number): void {
+    this.editTeacherService.getTeacherById(teacherId)
+      .subscribe(
+        (teacher: Teacher) => {
+          this.editedTeacher = teacher;
+        },
+        (error: HttpErrorResponse) => {
+          console.error('Error fetching teacher information:', error);
+          alert('Failed to fetch teacher information');
+        }
+      );
+  }
 
   ngOnChanges() {
     if (this.teacher && this.teacher.id) {

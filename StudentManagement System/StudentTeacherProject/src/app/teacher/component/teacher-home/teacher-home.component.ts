@@ -11,7 +11,7 @@ import { TeacherHomeService } from '../../services/teacherHome/teacher-home.serv
 export class TeacherHomeComponent {
   teachers: Teacher[] = [];
   selectedStudent: Teacher | null = null;
-  displayedColumns: string[] = ['teacherId', 'teacherName', 'department'];
+  displayedColumns: string[] = ['teacherId', 'teacherName', 'department','actions'];
   showAddForm: boolean = false;
 
 
@@ -52,6 +52,21 @@ export class TeacherHomeComponent {
     this.router.navigate(['/delete-teacher']);
   }
 
- 
- 
+  goDeleteSelectedTeacher(teacher: Teacher) {
+
+    this.router.navigate(['/delete-teacher',teacher.id]);
+
+    }
+
+  goDetailsSelectedTeacher(teacher: Teacher) {
+
+     this.router.navigate(['/show-teacher',teacher.id]);
+
+    }
+
+  goEditSelectedTeacher(teacher: Teacher) {
+
+      this.router.navigate(['/edit-teacher', teacher.id]);
+
+    }
 }

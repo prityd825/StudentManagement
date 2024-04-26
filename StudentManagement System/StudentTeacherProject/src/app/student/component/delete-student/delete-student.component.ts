@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router'; 
 import { Student } from '../../student.model';
 import { DeleteStudentService } from '../../services/deleteStudent/delete-student.service';
 import { ShowStudentService } from '../../services/showStudent/show-student.service';
@@ -9,30 +9,44 @@ import { ShowStudentService } from '../../services/showStudent/show-student.serv
   templateUrl: './delete-student.component.html',
   styleUrls: ['./delete-student.component.css']
 })
-export class DeleteStudentComponent {
+export class DeleteStudentComponent implements OnInit {
   studentId: number = 0;
-  student: Student = {id: 0,name: "", department:"", teacherId: 0, teacherName:""};
+  student: Student = { id: 0, name: "", department: "", teacherId: 0, teacherName: "" };
 
   constructor(
     private router: Router,
+    private route: ActivatedRoute,
     private deleteStudentService: DeleteStudentService,
-    private showStudentService: ShowStudentService,
+    private showStudentService: ShowStudentService
   ) {}
 
-  getStudentInfo() {
-    this.showStudentService.showStudentById(this.studentId)
-    .subscribe(
-      (student: Student) => {
-        console.log("successful!");
-        this.student = student;
-      },
-      (error: any) => {
-        alert("Student id not found!");
-        console.error('Error fetching student information:', error);
-        this.student = {  id: 0 ,name: "", department: "", teacherId: 0, teacherName:"" }; 
+  ngOnInit(): void {
+    this.route.params.subscribe(params => {
+      const studentId = +params['id'];
+      if (studentId) {
+        this.studentId = studentId;
+        this.getStudentById(studentId);
+      } else {
+        console.error('Invalid student ID provided.');
       }
-    );
+    });
   }
+
+  getStudentById(studentId: number): void {
+    this.showStudentService.showStudentById(studentId)
+      .subscribe(
+        (student: Student) => {
+          console.log("successful!");
+          this.student = student;
+        },
+        (error: any) => {
+          alert("Student id not found!");
+          console.error('Error fetching student information:', error);
+          this.student = { id: 0, name: "", department: "", teacherId: 0, teacherName: "" };
+        }
+      );
+  }
+
   cancelDelete() {
     alert('Deletion cancelled.');
     this.router.navigate(['/student', 'component', 'student-home']);

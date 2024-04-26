@@ -1,5 +1,5 @@
 <div>
-    <form class="Student-info-form" (ngSubmit)="getStudentInfo()" #teacherForm="ngForm" ngNativeValidate>
+    <form class="Student-info-form" #teacherForm="ngForm" ngNativeValidate>
       <div class="form-group">
         <label for="id">Student ID:</label>
         <input type="number" required id="id" name="id" [(ngModel)]="studentId" placeholder="Enter Student id" class="form-control" #idInput="ngModel">

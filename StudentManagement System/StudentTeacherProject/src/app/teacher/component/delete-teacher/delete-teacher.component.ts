@@ -1,25 +1,38 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 import { DeleteTeacherService } from '../../services/deleteTeacher/delete-teacher.service';
 import { Teacher } from '../../teacher.model';
 import { ShowTeacherService } from '../../services/showTeacher/show-teacher.service';
+import { ActivatedRoute, Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-delete-teacher',
   templateUrl: './delete-teacher.component.html',
   styleUrl: './delete-teacher.component.css'
 })
-export class DeleteTeacherComponent {
+export class DeleteTeacherComponent implements OnInit{
   teacherId: number = 0;
   teacher: Teacher = {id: 0,name: "", department:""};
 
   constructor(
     private router: Router,
+    private route: ActivatedRoute,
     private deleteTeacherService: DeleteTeacherService,
     private showTeacherService: ShowTeacherService,
   ) {}
 
-  getTeacherInfo() {
+  ngOnInit(): void {
+    this.route.params.subscribe(params => {
+      const teacherId = +params['id'];
+      if (teacherId) {
+        this.teacherId = teacherId;
+        this.getTeacherById(teacherId);
+      } else {
+        console.error('Invalid teacher ID provided.');
+      }
+    });
+  }
+
+  getTeacherById(teacherId: number): void {
     this.showTeacherService.showTeacherById(this.teacherId)
     .subscribe(
       (teacher: Teacher) => {

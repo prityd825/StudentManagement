@@ -12,6 +12,13 @@ export class EditStudentService {
   private domain = environment.domain;
   private apiUrl = `${this.domain}/Student`;
   constructor(private http: HttpClient) { }
+
+  getStudentById(studentId: number): Observable<Student> {
+    const url = `${this.apiUrl}/${studentId}`;
+    return this.http.get<Student>(url);
+  }
+
+
   updateStudentById(studentId: number, updatedStudentData: Partial<Student>): Observable<Student> {
     const url = `${this.apiUrl}/${studentId}`;
     return this.http.put<Student>(url, updatedStudentData);
