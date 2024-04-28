@@ -3,6 +3,8 @@ import { DeleteTeacherService } from '../../services/deleteTeacher/delete-teache
 import { Teacher } from '../../teacher.model';
 import { ShowTeacherService } from '../../services/showTeacher/show-teacher.service';
 import { ActivatedRoute, Router } from '@angular/router'; 
+import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-delete-teacher',
@@ -18,6 +20,7 @@ export class DeleteTeacherComponent implements OnInit{
     private route: ActivatedRoute,
     private deleteTeacherService: DeleteTeacherService,
     private showTeacherService: ShowTeacherService,
+    private toastr: ToastrService,
   ) {}
 
   ngOnInit(): void {
@@ -40,32 +43,36 @@ export class DeleteTeacherComponent implements OnInit{
         this.teacher = teacher;
       },
       (error: any) => {
-        alert("Teacher id not found!");
+        this.toastr.error("Teacher id not found!");
+        //alert("Teacher id not found!");
         console.error('Error fetching teacher information:', error);
         this.teacher = {  id: 0 ,name: "", department: "" }; 
       }
     );
   }
   cancelDelete() {
-    alert('Deletion cancelled.');
+    this.toastr.info('Deletion cancelled.');
+    //alert('Deletion cancelled.');
     this.router.navigate(['/teacher', 'component', 'teacher-home']);
   }
 
   confirmDelete() {
-    if (this.teacher) {
+    if (this.teacher&& this.teacher.id) {
       this.deleteTeacherService.deleteTeacher(this.teacher.id).subscribe(
         () => {
-          alert('Teacher deleted successfully.');
+          this.toastr.success("Success", "Teacher deleted successfully");
+          //alert('Teacher deleted successfully.');
           this.router.navigate(['/teacher', 'component', 'teacher-home']);
         },
         (error: any) => {
           console.error('Error deleting teacher:', error);
+          //console.error('Error deleting teacher:', error);
           alert('An error occurred while deleting the teacher.');
         }
       );
     } else {
-      alert('No student selected.');
+      this.toastr.warning('No teacher selected.');
+      //alert('No student selected.');
     }
   }
 }
-

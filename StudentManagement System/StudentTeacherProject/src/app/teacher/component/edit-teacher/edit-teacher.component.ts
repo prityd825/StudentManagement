@@ -4,6 +4,7 @@ import { EditTeacherService } from '../../services/editTeacher/edit-teacher.serv
 import { Teacher } from '../../teacher.model';
 import { ActivatedRoute } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-edit-teacher',
@@ -21,6 +22,7 @@ export class EditTeacherComponent {
   constructor(
     private editTeacherService: EditTeacherService,
     private route: ActivatedRoute,
+    private toastr: ToastrService,
   ) {}
 
 
@@ -43,7 +45,8 @@ export class EditTeacherComponent {
         },
         (error: HttpErrorResponse) => {
           console.error('Error fetching teacher information:', error);
-          alert('Failed to fetch teacher information');
+          //alert('Failed to fetch teacher information');
+          this.toastr.error('Failed to fetch teacher information');
         }
       );
   }
@@ -68,10 +71,12 @@ export class EditTeacherComponent {
     this.editTeacherService.updateTeacherById(this.editedTeacher.id, updateTeacherCommand)
       .subscribe(updatedTeacher => {
         console.log('Updated teacher:', updatedTeacher);
-        alert('Teacher updated successfully');
+        //alert('Teacher updated successfully');
+        this.toastr.success('Teacher updated successfully');
       }, error => {
         console.error('Failed to update teacher:', error);
-        alert('Failed to update teacher.You provide wrong Id');
+        //alert('Failed to update teacher.You provide wrong Id');
+        this.toastr.error('Failed to update teacher. You provided wrong ID.');
       });
   }
 }

@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\globalexception\\globalexceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\globalexception\\globalexceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\handler\\teacherhandler\\updateteachercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +19,20 @@
       "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\migrations\\20240421084909_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\globalexception\\globalexceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\globalexception\\globalexceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\handler\\teacherhandler\\updateteachercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\handler\\teacherhandler\\updateteachercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\handler\\studenthandler\\updatestudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\handler\\studenthandler\\updatestudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|solutionrelative:studentteacher(backend)\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F4E96F6-B7A7-48DE-836B-B7AE37F137A6}|StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).csproj|d:\\studentmanagement\\studentmanagement system\\studentteacher(backend)\\studentteacher(backend)\\handler\\studenthandler\\getstudentbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -146,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -162,19 +162,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
               "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
               "RelativeToolTip": "StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwB8AAAAuAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwB8AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T06:32:25.089Z"
+              "WhenOpened": "2024-04-21T06:32:25.089Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UpdateTeacherCommand.cs",
               "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\UpdateTeacherCommand.cs",
               "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\UpdateTeacherCommand.cs",
@@ -186,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "20240421084909_init.cs",
               "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs",
               "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Migrations\\20240421084909_init.cs",
@@ -198,20 +199,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "GlobalExceptionHandlingMiddleware.cs",
               "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\GlobalException\\GlobalExceptionHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\GlobalException\\GlobalExceptionHandlingMiddleware.cs",
               "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\GlobalException\\GlobalExceptionHandlingMiddleware.cs",
               "RelativeToolTip": "StudentTeacher(BackEnd)\\GlobalException\\GlobalExceptionHandlingMiddleware.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAkAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T14:04:29.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-24T14:04:29.714Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T06:30:28.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "UpdateTeacherCommandHandler.cs",
               "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\UpdateTeacherCommandHandler.cs",
               "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Handler\\TeacherHandler\\UpdateTeacherCommandHandler.cs",
@@ -223,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UpdateStudentCommandHandler.cs",
               "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Handler\\StudentHandler\\UpdateStudentCommandHandler.cs",
               "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Handler\\StudentHandler\\UpdateStudentCommandHandler.cs",
@@ -232,18 +244,6 @@
               "ViewState": "AQIAAA4AAAAAAAAAAAAAwCEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T14:48:13.26Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
-              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
-              "RelativeToolTip": "StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T06:30:28.515Z"
             },
             {
               "$type": "Document",

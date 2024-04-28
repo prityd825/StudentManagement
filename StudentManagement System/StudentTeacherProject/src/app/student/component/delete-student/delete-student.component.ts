@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Student } from '../../student.model';
 import { DeleteStudentService } from '../../services/deleteStudent/delete-student.service';
 import { ShowStudentService } from '../../services/showStudent/show-student.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-delete-student',
@@ -17,7 +18,8 @@ export class DeleteStudentComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private deleteStudentService: DeleteStudentService,
-    private showStudentService: ShowStudentService
+    private showStudentService: ShowStudentService,
+    private toastr: ToastrService,
   ) {}
 
   ngOnInit(): void {
@@ -36,11 +38,13 @@ export class DeleteStudentComponent implements OnInit {
     this.showStudentService.showStudentById(studentId)
       .subscribe(
         (student: Student) => {
+          this.toastr.success("The Student is added successfully");
           console.log("successful!");
           this.student = student;
         },
         (error: any) => {
-          alert("Student id not found!");
+          this.toastr.error('Student not found!');
+          //alert("Student id not found!");
           console.error('Error fetching student information:', error);
           this.student = { id: 0, name: "", department: "", teacherId: 0, teacherName: "" };
         }
@@ -48,7 +52,8 @@ export class DeleteStudentComponent implements OnInit {
   }
 
   cancelDelete() {
-    alert('Deletion cancelled.');
+    this.toastr.info('Deletion cancelled.');
+    //alert('Deletion cancelled.');
     this.router.navigate(['/student', 'component', 'student-home']);
   }
 
@@ -56,16 +61,19 @@ export class DeleteStudentComponent implements OnInit {
     if (this.student) {
       this.deleteStudentService.deleteStudent(this.student.id).subscribe(
         () => {
-          alert('Student deleted successfully.');
+          this.toastr.success('Student deleted successfully.');
+          //alert('Student deleted successfully.');
           this.router.navigate(['/student', 'component', 'student-home']);
         },
         (error: any) => {
           console.error('Error deleting student:', error);
-          alert('An error occurred while deleting the student.');
+          //alert('An error occurred while deleting the student.');
+          this.toastr.error('An error occurred while deleting the student.');
         }
       );
     } else {
-      alert('No student selected.');
+      //alert('No student selected.');
+      this.toastr.warning('No student selected.');
     }
   }
 }

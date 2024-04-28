@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { EditStudentService } from '../../services/editStudent/edit-student.service';
 import { Student } from '../../student.model';
 import { HttpErrorResponse } from '@angular/common/http';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-edit-student',
@@ -22,7 +23,8 @@ export class EditStudentComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private editStudentService: EditStudentService
+    private editStudentService: EditStudentService,
+    private toastr: ToastrService,
   ) {}
 
   ngOnInit(): void {
@@ -44,7 +46,8 @@ export class EditStudentComponent implements OnInit {
         },
         (error: HttpErrorResponse) => {
           console.error('Error fetching student information:', error);
-          alert('Failed to fetch student information');
+          //alert('Failed to fetch student information');
+          this.toastr.error('Failed to fetch student information');
         }
       );
   }
@@ -65,15 +68,18 @@ export class EditStudentComponent implements OnInit {
       .subscribe(
         (updatedStudent: Student) => {
           console.log('Updated Student:', updatedStudent);
-          alert('Student Info updated successfully');
+          //alert('Student Info updated successfully');
+          this.toastr.success('Student info updated successfully');
         },
         (error: HttpErrorResponse) => {
           if (error.error && error.error.title) {
             console.error('Failed to update Student:', error.error.title);
-            alert('Failed to update Student: ' + error.error.title);
+            //alert('Failed to update Student: ' + error.error.title);
+            this.toastr.error('Failed to update Student: ' + error.error.title);
           } else {
             console.error('Failed to update Student:', error.message);
-            alert('Failed to update Student. You provided wrong Id');
+            //alert('Failed to update Student. You provided wrong Id');
+            this.toastr.error('Failed to update Student. You provided wrong Id');
           }
         }
       );

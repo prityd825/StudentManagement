@@ -9,6 +9,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideToastr } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent
@@ -23,11 +27,13 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatTableModule,
     MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot(),
     
   ],
 
-  providers: [],
+  providers: [provideAnimations(), provideToastr(),],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
