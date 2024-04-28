@@ -26,7 +26,7 @@ export class ShowStudentComponent implements OnInit {
         this.studentId = studentId;
         this.getStudentInfo(); 
       } else {
-        console.error('Invalid student ID provided.');
+        //console.error('Invalid student ID provided.');
       }
     });
   }
@@ -42,7 +42,7 @@ export class ShowStudentComponent implements OnInit {
         (error: any) => {
           //alert("Enter a valid student found!");
           this.toastr.error('Failed to fetch student information');
-          console.error('Error fetching student information:', error);
+          //console.error('Error fetching student information:', error);
           this.student = { id: 0, name: "", department: "", teacherId: 0, teacherName: "" };
         }
       );

@@ -13,6 +13,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideToastr } from 'ngx-toastr';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ErrorHandleService } from './error-handle.service';
+import { ErrorInterceptor } from './error-interceptor.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -33,7 +37,15 @@ import { provideToastr } from 'ngx-toastr';
     
   ],
 
-  providers: [provideAnimations(), provideToastr(),],
+  providers: [provideAnimations(), provideToastr(),
+    ErrorHandleService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrorInterceptor,
+      multi: true
+    }
+  // { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true} 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
