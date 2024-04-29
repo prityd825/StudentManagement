@@ -9,6 +9,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { DeleteConfirmDialogComponent } from './component/delete-confirmation-dialog/delete-confirmation-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     DeleteStudentComponent,
     ShowStudentComponent,
     StudentHomeComponent,
+    DeleteConfirmDialogComponent,
 
   ],
   imports: [
@@ -25,6 +28,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     FormsModule,
     MatPaginatorModule,
+    MatDialogModule,
    
   ]
 })

@@ -14,4 +14,8 @@ export class TeacherHomeService {
   getTeachers(): Observable<Teacher[]> {
     return this.http.get<Teacher[]>(this.apiUrl);
   }
+  deleteTeacher(teacherId: number): Observable<void> {
+    const url = `${this.apiUrl}/${teacherId}`; 
+    return this.http.delete<void>(url);
+  }
 }

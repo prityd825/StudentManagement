@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { DeleteConfirmDialogComponent } from './component/delete-confirm-dialog/delete-confirm-dialog.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     DeleteTeacherComponent,
     ShowTeacherComponent,
     TeacherHomeComponent,
+    DeleteConfirmDialogComponent,
     
     
   ],
@@ -30,6 +32,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatPaginatorModule,
   ],
   providers: [],
-  bootstrap: []
+  bootstrap: [],
+  
 })
 export class TeacherModule { }

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { EditStudentService } from '../../services/editStudent/edit-student.service';
 import { Student } from '../../student.model';
 import { HttpErrorResponse } from '@angular/common/http';
@@ -25,6 +25,7 @@ export class EditStudentComponent implements OnInit {
     private route: ActivatedRoute,
     private editStudentService: EditStudentService,
     private toastr: ToastrService,
+    private router: Router,
   ) {}
 
   ngOnInit(): void {
@@ -43,6 +44,7 @@ export class EditStudentComponent implements OnInit {
       .subscribe(
         (student: Student) => {
           this.editedStudent = student;
+          
         },
         (error: HttpErrorResponse) => {
           console.error('Error fetching student information:', error);
@@ -70,6 +72,7 @@ export class EditStudentComponent implements OnInit {
           console.log('Updated Student:', updatedStudent);
           //alert('Student Info updated successfully');
           this.toastr.success('Student info updated successfully');
+          this.router.navigate(['student/component/student-home']);
         },
         (error: HttpErrorResponse) => {
           if (error.error && error.error.title) {

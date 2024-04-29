@@ -2,10 +2,11 @@ import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Teacher } from '../../teacher.model';
 import { TeacherHomeService } from '../../services/teacherHome/teacher-home.service';
-
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { DeleteConfirmDialogComponent } from '../delete-confirm-dialog/delete-confirm-dialog.component';
+import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-teacher-home',
@@ -16,10 +17,10 @@ export class TeacherHomeComponent {
   
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   teachers: MatTableDataSource<Teacher> = new MatTableDataSource<Teacher>();
-  //teachers: Teacher[] = [];
   selectedStudent: Teacher | null = null;
   displayedColumns: string[] = ['teacherId', 'teacherName', 'department','actions'];
   showAddForm: boolean = false;
+  
 
 
   constructor(private router: Router, 
@@ -32,15 +33,6 @@ export class TeacherHomeComponent {
   }
   
   fetchTeachers() {
-   /* this.teacherHomeService.getTeachers().subscribe(
-      (teachers: Teacher[]) => {
-        this.teachers = teachers; 
-      },
-      (error: any) => {
-        console.error('Error fetching teachers:', error);
-      }
-    );
-  }*/
   this.teacherHomeService.getTeachers().subscribe(
     (teachers: Teacher[]) => {
       this.teachers = new MatTableDataSource<Teacher>(teachers);
@@ -73,8 +65,25 @@ export class TeacherHomeComponent {
   }
 
   goDeleteSelectedTeacher(teacher: Teacher) {
-  this.router.navigate(['delete-teacher', teacher.id]);
-}
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.width = '250px';
+    dialogConfig.data = { teacher: teacher };
+    dialogConfig.panelClass = 'custom-dialog-container';
+    const dialogRef: MatDialogRef<DeleteConfirmDialogComponent> = this.dialog.open(DeleteConfirmDialogComponent, dialogConfig);
+    dialogRef.afterClosed().subscribe((result: any) => { 
+      if (result) {
+        this.teacherHomeService.deleteTeacher(teacher.id).subscribe(
+          () => {
+            this.fetchTeachers();
+          },
+          (error: any) => {
+            console.error('Error deleting teacher:', error);
+          }
+        );
+      }
+    });
+  }
+
 
   goDetailsSelectedTeacher(teacher: Teacher) {
 

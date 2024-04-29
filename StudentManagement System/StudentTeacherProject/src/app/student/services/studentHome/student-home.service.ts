@@ -14,4 +14,9 @@ export class StudentHomeService {
   getStudents(): Observable<Student[]> {
     return this.http.get<Student[]>(this.apiUrl);
   }
+
+  deleteStudent(studentId: number): Observable<void> {
+    const url = `${this.apiUrl}/${studentId}`; 
+    return this.http.delete<void>(url);
+  }
 }

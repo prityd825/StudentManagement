@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { EditTeacherService } from '../../services/editTeacher/edit-teacher.service';
 import { Teacher } from '../../teacher.model';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
 import { ToastrService } from 'ngx-toastr';
 
@@ -23,6 +23,7 @@ export class EditTeacherComponent {
     private editTeacherService: EditTeacherService,
     private route: ActivatedRoute,
     private toastr: ToastrService,
+    private router: Router,
   ) {}
 
 
@@ -73,6 +74,7 @@ export class EditTeacherComponent {
         console.log('Updated teacher:', updatedTeacher);
         //alert('Teacher updated successfully');
         this.toastr.success('Teacher updated successfully');
+        this.router.navigate(['teacher/component/teacher-home']);
       }, error => {
         console.error('Failed to update teacher:', error);
         //alert('Failed to update teacher.You provide wrong Id');

@@ -4,6 +4,8 @@ import { Student } from '../../student.model';
 import { StudentHomeService } from '../../services/studentHome/student-home.service';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dialog';
+import { DeleteConfirmDialogComponent } from '../delete-confirmation-dialog/delete-confirmation-dialog.component';
 
 @Component({
   selector: 'app-student-home',
@@ -20,22 +22,15 @@ export class StudentHomeComponent implements OnInit {
   displayedColumns: string[] = ['studentId', 'studentName', 'department', 'teacherId', 'teacherName', 'actions'];
   showAddForm: boolean = false;
 
-  constructor(private router: Router, private studentHomeService: StudentHomeService) { }
+  constructor(private router: Router, private studentHomeService: StudentHomeService
+    , private dialog: MatDialog,
+  ) { }
 
   ngOnInit(): void {
     this.fetchStudents();
   }
   
   fetchStudents() {
-    /*this.studentHomeService.getStudents().subscribe(
-      (students: Student[]) => {
-        this.students = students; 
-      },
-      (error: any) => {
-        console.error('Error fetching students:', error);
-      }
-    );
-  }*/
   this.studentHomeService.getStudents().subscribe(
     (students: Student[]) => {
       this.students = new MatTableDataSource<Student>(students);
@@ -65,8 +60,26 @@ export class StudentHomeComponent implements OnInit {
   }
 
   goDeleteSelectedStudent(student: Student) {
-    this.router.navigate(['/delete-student', student.id]);
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.width = '250px';
+    dialogConfig.data = { student: student };
+    dialogConfig.panelClass = 'custom-dialog-container';
+    const dialogRef: MatDialogRef<DeleteConfirmDialogComponent> = this.dialog.open(DeleteConfirmDialogComponent, dialogConfig);
+    dialogRef.afterClosed().subscribe((result: any) => { 
+      if (result) {
+        this.studentHomeService.deleteStudent(student.id).subscribe(
+          () => {
+            this.fetchStudents();
+          },
+          (error: any) => {
+            console.error('Error deleting Student:', error);
+          }
+        );
+      }
+    });
   }
+
+  
 
   goDetailsStudent(){
     this.router.navigate(['/show-student']);
@@ -74,5 +87,8 @@ export class StudentHomeComponent implements OnInit {
 
   goDetailsSelectedStudent(student: Student) {
     this.router.navigate(['/show-student', student.id]);
+  }
+  refreshStudentData() {
+    this.fetchStudents();
   }
 }
