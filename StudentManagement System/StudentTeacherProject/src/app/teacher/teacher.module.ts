@@ -8,6 +8,9 @@ import { TeacherHomeComponent } from './component/teacher-home/teacher-home.comp
 import { MatTableModule } from '@angular/material/table'; 
 import { FormsModule } from '@angular/forms';
 
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 
 @NgModule({
   declarations: [
@@ -15,12 +18,16 @@ import { FormsModule } from '@angular/forms';
     EditTeacherComponent,
     DeleteTeacherComponent,
     ShowTeacherComponent,
-    TeacherHomeComponent
+    TeacherHomeComponent,
+    
+    
   ],
   imports: [
     CommonModule,
     MatTableModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: []

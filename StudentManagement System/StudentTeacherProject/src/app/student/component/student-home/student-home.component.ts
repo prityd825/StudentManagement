@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Student } from '../../student.model';
 import { StudentHomeService } from '../../services/studentHome/student-home.service';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-student-home',
@@ -9,7 +11,11 @@ import { StudentHomeService } from '../../services/studentHome/student-home.serv
   styleUrls: ['./student-home.component.css']
 })
 export class StudentHomeComponent implements OnInit {
-  students: Student[] = [];
+
+   
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  students: MatTableDataSource<Student> = new MatTableDataSource<Student>();
+  //students: Student[] = [];
   selectedStudent: Student | null = null;
   displayedColumns: string[] = ['studentId', 'studentName', 'department', 'teacherId', 'teacherName', 'actions'];
   showAddForm: boolean = false;
@@ -21,7 +27,7 @@ export class StudentHomeComponent implements OnInit {
   }
   
   fetchStudents() {
-    this.studentHomeService.getStudents().subscribe(
+    /*this.studentHomeService.getStudents().subscribe(
       (students: Student[]) => {
         this.students = students; 
       },
@@ -29,7 +35,17 @@ export class StudentHomeComponent implements OnInit {
         console.error('Error fetching students:', error);
       }
     );
-  }
+  }*/
+  this.studentHomeService.getStudents().subscribe(
+    (students: Student[]) => {
+      this.students = new MatTableDataSource<Student>(students);
+      this.students.paginator = this.paginator;
+    },
+    (error: any) => {
+      console.error('Error fetching students:', error);
+    }
+  );
+}
 
   goAddStudent() {
     this.router.navigate(['/add-student']);

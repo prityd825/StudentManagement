@@ -15,7 +15,10 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideToastr } from 'ngx-toastr';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ErrorHandleService } from './error-handle.service';
-import { ErrorInterceptor } from './error-interceptor.service';
+import { ErrorInterceptor } from './error.interceptor';
+import { RouterModule } from '@angular/router';
+
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -33,19 +36,21 @@ import { ErrorInterceptor } from './error-interceptor.service';
     MatDialogModule,
     HttpClientModule,
     BrowserAnimationsModule, 
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot(), 
+    RouterModule, 
+    MatPaginatorModule,
+    
+    
+    
     
   ],
 
   providers: [provideAnimations(), provideToastr(),
-    ErrorHandleService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: ErrorInterceptor,
-      multi: true
-    }
-  // { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true} 
+    ErrorHandleService, 
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }
+    
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent], 
+  
 })
 export class AppModule { }

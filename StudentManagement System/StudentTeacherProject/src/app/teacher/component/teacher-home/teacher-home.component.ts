@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Teacher } from '../../teacher.model';
 import { TeacherHomeService } from '../../services/teacherHome/teacher-home.service';
+
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-teacher-home',
@@ -9,20 +13,26 @@ import { TeacherHomeService } from '../../services/teacherHome/teacher-home.serv
   styleUrl: './teacher-home.component.css'
 })
 export class TeacherHomeComponent {
-  teachers: Teacher[] = [];
+  
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  teachers: MatTableDataSource<Teacher> = new MatTableDataSource<Teacher>();
+  //teachers: Teacher[] = [];
   selectedStudent: Teacher | null = null;
   displayedColumns: string[] = ['teacherId', 'teacherName', 'department','actions'];
   showAddForm: boolean = false;
 
 
-  constructor(private router: Router, private teacherHomeService: TeacherHomeService) { }
+  constructor(private router: Router, 
+    private teacherHomeService: TeacherHomeService,
+    private dialog: MatDialog,
+  ) { }
 
   ngOnInit(): void {
     this.fetchTeachers();
   }
   
   fetchTeachers() {
-    this.teacherHomeService.getTeachers().subscribe(
+   /* this.teacherHomeService.getTeachers().subscribe(
       (teachers: Teacher[]) => {
         this.teachers = teachers; 
       },
@@ -30,7 +40,17 @@ export class TeacherHomeComponent {
         console.error('Error fetching teachers:', error);
       }
     );
-  }
+  }*/
+  this.teacherHomeService.getTeachers().subscribe(
+    (teachers: Teacher[]) => {
+      this.teachers = new MatTableDataSource<Teacher>(teachers);
+      this.teachers.paginator = this.paginator;
+    },
+    (error: any) => {
+      console.error('Error fetching teachers:', error);
+    }
+  );
+}
 
   
   goAddTeacher() {
@@ -53,10 +73,8 @@ export class TeacherHomeComponent {
   }
 
   goDeleteSelectedTeacher(teacher: Teacher) {
-
-    this.router.navigate(['/delete-teacher',teacher.id]);
-
-    }
+  this.router.navigate(['delete-teacher', teacher.id]);
+}
 
   goDetailsSelectedTeacher(teacher: Teacher) {
 

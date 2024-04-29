@@ -8,6 +8,7 @@ import { StudentHomeComponent } from './component/student-home/student-home.comp
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatTableModule,
     FormsModule,
+    MatPaginatorModule,
    
   ]
 })

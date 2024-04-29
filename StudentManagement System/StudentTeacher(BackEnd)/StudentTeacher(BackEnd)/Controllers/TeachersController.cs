@@ -24,8 +24,13 @@ namespace StudentTeacher_BackEnd_.Controllers
         }
         
         [HttpGet]
-        public async Task<IActionResult> GetAllTeachers()
+        public async Task<IActionResult> GetAllTeachers(int page = 1, int pageSize = 5)
         {
+            var query = new GetAllTeacherQuery
+            {
+                Page = page,
+                PageSize = pageSize
+            };
             var teachers = await _mediator.Send(new GetAllTeacherQuery());
             return Ok(teachers);
         }

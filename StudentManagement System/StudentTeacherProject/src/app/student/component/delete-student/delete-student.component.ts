@@ -29,6 +29,7 @@ export class DeleteStudentComponent implements OnInit {
         this.studentId = studentId;
         this.getStudentById(studentId);
       } else {
+        this.toastr.warning("Invalid Id");
         console.error('Invalid student ID provided.');
       }
     });

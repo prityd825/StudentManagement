@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using StudentTeacher_BackEnd_.Handler.StudentHandler;
+using StudentTeacher_BackEnd_.Handler.TeacherHandler;
 using StudentTeacher_BackEnd_.StudentHandler;
 
 namespace StudentTeacher_BackEnd_.Controllers
@@ -24,8 +25,13 @@ namespace StudentTeacher_BackEnd_.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllStudents()
+        public async Task<IActionResult> GetAllStudents(int page = 1, int pageSize = 5)
         {
+            var query = new GetAllStudentsQuery
+            {
+                Page = page,
+                PageSize = pageSize
+            };
             var students = await _mediator.Send(new GetAllStudentsQuery());
             return Ok(students);
         }
