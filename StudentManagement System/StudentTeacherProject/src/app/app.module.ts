@@ -19,10 +19,12 @@ import { ErrorInterceptor } from './error.interceptor';
 import { RouterModule } from '@angular/router';
 
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { ButtonComponent } from './ReusableComponent/button/button.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ButtonComponent
   ],
   
   imports: [
@@ -39,6 +41,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     ToastrModule.forRoot(), 
     RouterModule, 
     MatPaginatorModule,
+    ButtonComponent
     
     
     

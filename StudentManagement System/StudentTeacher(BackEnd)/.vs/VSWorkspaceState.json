@@ -2,15 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\StudentTeacher(BackEnd)",
-    "\\StudentTeacher(BackEnd)\\Controllers",
-    "\\StudentTeacher(BackEnd)\\Data",
-    "\\StudentTeacher(BackEnd)\\Handler",
-    "\\StudentTeacher(BackEnd)\\Handler\\StudentHandler",
-    "\\StudentTeacher(BackEnd)\\Handler\\TeacherHandler",
-    "\\StudentTeacher(BackEnd)\\Models",
-    "\\StudentTeacher(BackEnd)\\Models\\Domains",
-    "\\StudentTeacher(BackEnd)\\Repositories"
+    "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)",
+    "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests",
+    "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers",
+    "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers\\TeachersController"
   ],
-  "SelectedNode": "\\StudentTeacher(BackEnd).sln",
+  "SelectedNode": "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers\\TeachersController\\TeachersControllerTests.cs",
   "PreviewInSolutionExplorer": false
 }
