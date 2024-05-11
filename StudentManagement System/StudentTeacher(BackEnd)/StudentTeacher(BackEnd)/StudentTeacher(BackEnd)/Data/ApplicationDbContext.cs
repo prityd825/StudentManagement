@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using StudentTeacher_BackEnd_.Models.Domains;
 
 namespace StudentTeacher_BackEnd_.Data
@@ -12,6 +14,7 @@ namespace StudentTeacher_BackEnd_.Data
 
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Student> Students { get; set; }
-        public DbSet<User> Users { get; set; }
+        
+       
     }
 }

@@ -1,12 +1,17 @@
 <header>
-  <h2>Student Mangement</h2>
-  <ul>
-    <li> <a routerLink = "student/component/student-home">Student</a> </li>
-
-    <li><a routerLink = "teacher/component/teacher-home">Teacher</a></li>
-
+  <h2>Student Management</h2>
+  <ul class="header-links" *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+    <div>
+      <button class="btn btn-warning" (click)="auth.logout()">Log Out</button>
+      <li><a routerLink="student/component/student-home">Student</a></li>
+      <li><a routerLink="teacher/component/teacher-home">Teacher</a></li>
+    </div>
   </ul>
+  <ng-template #loggedOut>
+    <button class="btn btn-primary" (click)="auth.loginWithRedirect()">Log in</button>
+  </ng-template>
 </header>
+
 
 <router-outlet></router-outlet>
 

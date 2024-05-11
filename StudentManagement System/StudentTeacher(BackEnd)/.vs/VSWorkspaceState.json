@@ -5,7 +5,8 @@
     "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)",
     "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests",
     "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers",
-    "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers\\TeachersController"
+    "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers\\TeachersController",
+    "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories"
   ],
   "SelectedNode": "\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers\\TeachersController\\TeachersControllerTests.cs",
   "PreviewInSolutionExplorer": false

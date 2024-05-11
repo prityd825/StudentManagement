@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StudentTeacher_BackEnd_.Handler.TeacherHandler;
 using System.Threading.Tasks;
@@ -7,6 +8,7 @@ namespace StudentTeacher_BackEnd_.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class TeacherController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -42,7 +44,7 @@ namespace StudentTeacher_BackEnd_.Controllers
             return Ok(teacher);
         }
 
-
+        
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateTeacher(int id, [FromBody] UpdateTeacherCommand command)
         {
@@ -58,6 +60,8 @@ namespace StudentTeacher_BackEnd_.Controllers
             var updatedTeacher = await _mediator.Send(command);
             return Ok(updatedTeacher);
         }
+        
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTeacher(int id)

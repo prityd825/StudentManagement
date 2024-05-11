@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Repository\\GenericRepositoryTests.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Repository\\GenericRepositoryTests.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers\\TeachersController\\TeachersControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers\\TeachersController\\TeachersControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +26,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenericRepositoryTests.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Repository\\GenericRepositoryTests.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Repository\\GenericRepositoryTests.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Repository\\GenericRepositoryTests.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Repository\\GenericRepositoryTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T19:39:07.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\GenericRepository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAADwvysAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T19:36:33.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T19:36:31.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TeachersControllerTests.cs",
+              "DocumentMoniker": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers\\TeachersController\\TeachersControllerTests.cs",
+              "RelativeDocumentMoniker": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers\\TeachersController\\TeachersControllerTests.cs",
+              "ToolTip": "D:\\StudentManagement\\StudentManagement System\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers\\TeachersController\\TeachersControllerTests.cs",
+              "RelativeToolTip": "StudentTeacher(BackEnd)\\StudentTeacher(BackEnd).Tests\\Controllers\\TeachersController\\TeachersControllerTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T05:47:31.738Z"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"

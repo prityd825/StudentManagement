@@ -17,14 +17,15 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ErrorHandleService } from './error-handle.service';
 import { ErrorInterceptor } from './error.interceptor';
 import { RouterModule } from '@angular/router';
-
+import { AppState, AuthModule, RedirectLoginOptions } from '@auth0/auth0-angular';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { ButtonComponent } from './ReusableComponent/button/button.component';
+import { environment } from '../environments/environment.development';
+import { AuthService } from '@auth0/auth0-angular';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonComponent
+   
   ],
   
   imports: [
@@ -41,7 +42,14 @@ import { ButtonComponent } from './ReusableComponent/button/button.component';
     ToastrModule.forRoot(), 
     RouterModule, 
     MatPaginatorModule,
-    ButtonComponent
+    AuthModule.forRoot({
+      domain: environment.auth.domain,
+      clientId: environment.auth.clientId,
+      authorizationParams: {
+        redirect_uri: environment.auth.redirectUri,
+      }
+      
+    }),
     
     
     
@@ -50,7 +58,8 @@ import { ButtonComponent } from './ReusableComponent/button/button.component';
 
   providers: [provideAnimations(), provideToastr(),
     ErrorHandleService, 
-    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+    AuthService
     
   ],
   bootstrap: [AppComponent], 

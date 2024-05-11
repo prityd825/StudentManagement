@@ -12,6 +12,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { DeleteConfirmDialogComponent } from './component/delete-confirmation-dialog/delete-confirmation-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 
+
 @NgModule({
   declarations: [
     AddStudentComponent,
@@ -29,6 +30,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     FormsModule,
     MatPaginatorModule,
     MatDialogModule,
+    
    
   ]
 })

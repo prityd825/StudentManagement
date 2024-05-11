@@ -52,3 +52,19 @@ footer {
 .sec li {
     margin: 6px 0; 
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-links div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-links button,
+  .header-links li {
+    margin-right: 10px;
+  }
+  
