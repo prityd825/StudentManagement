@@ -30,21 +30,6 @@ namespace StudentTeacher_BackEnd_.Controllers
             return Ok(studentId);
         }
 
-        /*
-                [Authorize("ReadProfile")]
-                [HttpGet]
-                public async Task<IActionResult> GetAllStudents()
-                {
-                    var token = HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
-                    Console.WriteLine($"JWT Token: {token}");
-
-
-                    var students = await _mediator.Send(new GetAllStudentsQuery());
-                    return Ok(students);
-                } */
-
-
-        // [Authorize("ReadProfile")]
        
         [HttpGet]
         public async Task<IActionResult> GetAllStudents()
